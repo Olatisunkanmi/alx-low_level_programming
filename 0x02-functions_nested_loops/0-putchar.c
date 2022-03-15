@@ -1,20 +1,18 @@
-#include <unistd.h>
 #include "main.h"
-
 /**
- * main - Check description
- * Description: It prints the word _putchar, followed by a new line.
- * Return: 0.
- */
-
+* main - Entry point
+* write a program tha prints Holberton, followed by a new line.
+* Return: Always (Success)
+*/
 int main(void)
 {
-	char word[9] = "_putchar\n";
-	int i;
+	char *ch = "_putchar";
 
-	for (i = 0; i < 9; i++)
+	while (*ch)
 	{
-		_putchar(word[i]);
+		_putchar(*ch);
+		ch++;
 	}
-	return (0);
+	_putchar('\n');
+return (0);
 }
